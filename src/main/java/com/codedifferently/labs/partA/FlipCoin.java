@@ -9,6 +9,8 @@ public class FlipCoin {
         // 50% chance heads, 50% chance tails
         Random rand = new Random();
         double chance = rand.nextDouble();
-        System.out.println(chance);
+        String result = chance < 0.5 ? "heads" : "tails";
+        System.out.println("Chance: " + chance);
+        System.out.println("Result: " + result);
     }
 }
